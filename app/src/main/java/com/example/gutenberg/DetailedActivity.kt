@@ -32,7 +32,7 @@ class DetailedActivity : AppCompatActivity() {
                 Picasso.get().load(result.formats.image_jpeg).into(binding.bookImageView)
             }
             binding.btn.setOnClickListener{
-                val url = Uri.parse(result.formats.text_utf)
+                val url = Uri.parse(result.formats.application_rdf)
                 val intent= Intent(Intent.ACTION_VIEW,url)
                 startActivity(intent)
             }
